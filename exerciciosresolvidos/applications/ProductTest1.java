@@ -1,5 +1,5 @@
-package cursonelioalves.applications;
-import cursonelioalves.entities.Product;
+package cursonelioalves.exerciciosresolvidos.applications;
+import cursonelioalves.exerciciosresolvidos.entities.Product;
 
 import java.util.Locale;
 import java.util.Scanner;

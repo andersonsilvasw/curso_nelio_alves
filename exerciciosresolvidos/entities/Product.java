@@ -1,4 +1,4 @@
-package cursonelioalves.entities;
+package cursonelioalves.exerciciosresolvidos.entities;
 
 public class Product {
     public String name;
