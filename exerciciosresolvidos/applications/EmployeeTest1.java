@@ -10,17 +10,23 @@ public class EmployeeTest1 {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("What is your name? ");
-        String name = sc.nextLine();
-        System.out.println("What is you Gross Salary? ");
-        double grossSalary = sc.nextDouble();
-        System.out.println("What is the Tax? ");
-        double tax = sc.nextDouble();
+        Employee emp = new Employee();
+        System.out.print("Name: ");
+        emp.name = sc.nextLine();
+        System.out.print("Gross salary: ");
+        emp.grossSalary = sc.nextDouble();
+        System.out.print("Tax: ");
+        emp.tax = sc.nextDouble();
 
-        System.out.println("Employee: " + name + ", Gross Salary: $ " + grossSalary);
-        System.out.println("Which percentage to increase salary? ");
+        System.out.println();
+        System.out.println("Employee: " + emp);
+        System.out.println();
+        System.out.print("Which percentage to increase salary? ");
         double percentage = sc.nextDouble();
-        double netSalary = Employee.increaseSalary(percentage, grossSalary, tax);
-        System.out.println("Updated data: " + name + ", Net Salary: $ " + Employee.increaseSalary(percentage, grossSalary, tax));
+        emp.increaseSalary(percentage);
+
+        System.out.println();
+        System.out.println("Updated data: " + emp);
+        sc.close();
     }
 }

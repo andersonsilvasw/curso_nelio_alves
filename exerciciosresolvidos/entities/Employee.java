@@ -1,11 +1,17 @@
 package cursonelioalves.exerciciosresolvidos.entities;
 
 public class Employee {
-    public static double netSalary (double grossSalary, double tax) {
-        return grossSalary - (grossSalary * tax / 100);
-    }
+    public String name;
+    public double grossSalary;
+    public double tax;
 
-    public static double increaseSalary (double percentage, double grossSalary, double tax) {
-        return (grossSalary + (grossSalary * percentage / 100)) - tax;
+    public double netSalary() {
+        return grossSalary - tax;
+    }
+    public void increaseSalary(double percentage) {
+        grossSalary += grossSalary * percentage / 100.0;
+    }
+    public String toString() {
+        return name + ", $ " + String.format("%.2f", netSalary());
     }
 }
