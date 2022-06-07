@@ -22,9 +22,9 @@ public class Dates {
         Date y2 = sdf2.parse("25/06/2018 15:42:07");
         Date y3 = Date.from(Instant.parse("2018-06-25T15:42:07Z"));
 
-        System.out.println("------------------------------------");
-        System.out.println("#     PADRÃO JAVA     ");
-        System.out.println("------------------------------------");
+        System.out.println("-----------------------");
+        System.out.println("#     PADRÃO JAVA     #");
+        System.out.println("-----------------------");
         System.out.println("x1: " + x1);
         System.out.println("x2: " + x2);
         System.out.println("x3: " + x3);
@@ -32,9 +32,9 @@ public class Dates {
         System.out.println("y1: " + y1);
         System.out.println("y2: " + y2);
         System.out.println("y3: " + y3);
-        System.out.println("----------------------------------------");
-        System.out.println("#     FORMATADA - HORÁRIO DO BRASIL     ");
-        System.out.println("----------------------------------------");
+        System.out.println("-----------------------------------------");
+        System.out.println("#     FORMATADA - HORÁRIO DO BRASIL     #");
+        System.out.println("-----------------------------------------");
         System.out.println("x1: " + sdf2.format(x1));
         System.out.println("x2: " + sdf2.format(x2));
         System.out.println("x3: " + sdf2.format(x3));
@@ -42,9 +42,9 @@ public class Dates {
         System.out.println("y1: " + sdf2.format(y1));
         System.out.println("y2: " + sdf2.format(y2));
         System.out.println("y3: " + sdf2.format(y3));
-        System.out.println("-------------------------------------------");
-        System.out.println("#     FORMATADA - HORÁRIO DE GREENWICH     ");
-        System.out.println("-------------------------------------------");
+        System.out.println("--------------------------------------------");
+        System.out.println("#     FORMATADA - HORÁRIO DE GREENWICH     #");
+        System.out.println("--------------------------------------------");
         System.out.println("x1: " + sdf3.format(x1));
         System.out.println("x2: " + sdf3.format(x2));
         System.out.println("x3: " + sdf3.format(x3));
