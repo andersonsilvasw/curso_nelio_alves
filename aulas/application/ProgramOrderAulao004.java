@@ -54,10 +54,8 @@ public class ProgramOrderAulao004 {
 
             order.addItem(it);
         }
-
         System.out.println();
         System.out.println(order);
-
         sc.close();
     }
 }
