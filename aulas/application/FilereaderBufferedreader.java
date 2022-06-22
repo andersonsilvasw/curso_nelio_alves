@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class FileAndBuffered {
+public class FilereaderBufferedreader {
     public static void main(String[] args) {
 
         String path = "c:\\temp\\aulagithubnelioalves\\in.txt";
