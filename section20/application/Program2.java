@@ -3,10 +3,12 @@ package cursonelioalves.section20.application;
 import cursonelioalves.section20.entities.Product;
 import cursonelioalves.section20.util.PriceUpdate;
 import cursonelioalves.section20.util.ProductPredicate;
+import cursonelioalves.section20.util.UpperCaseName;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
+import java.util.stream.Collectors;
 
 public class Program2 {
     public static void main(String[] args) {
@@ -19,8 +21,8 @@ public class Program2 {
         list.add(new Product("Tablet", 450.00));
         list.add(new Product("HD Base", 80.00));
 
-        list.forEach(new PriceUpdate());
+        List<String> names = list.stream().map(new UpperCaseName()).collect(Collectors.toList());
 
-        list.forEach(System.out::println);
+        names.forEach(System.out::println);
     }
 }
