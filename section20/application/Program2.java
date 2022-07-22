@@ -1,6 +1,7 @@
 package cursonelioalves.section20.application;
 
 import cursonelioalves.section20.entities.Product;
+import cursonelioalves.section20.util.PriceUpdate;
 import cursonelioalves.section20.util.ProductPredicate;
 
 import java.util.ArrayList;
@@ -18,10 +19,8 @@ public class Program2 {
         list.add(new Product("Tablet", 450.00));
         list.add(new Product("HD Base", 80.00));
 
-        list.removeIf(new ProductPredicate());
+        list.forEach(new PriceUpdate());
 
-        for (Product p : list) {
-            System.out.println(p);
-        }
+        list.forEach(System.out::println);
     }
 }
