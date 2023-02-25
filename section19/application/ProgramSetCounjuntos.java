@@ -1,7 +1,5 @@
 package cursonelioalves.section19.application;
 
-import exerciciosandersonsilva.espacomahara.test.ServicoTest;
-
 import java.util.Arrays;
 import java.util.Set;
 import java.util.TreeSet;
